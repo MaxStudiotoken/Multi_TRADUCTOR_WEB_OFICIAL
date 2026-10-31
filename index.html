@@ -33,12 +33,26 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 15px 50px;
             background-color: var(--negro);
             border-bottom: 3px solid var(--amarillo);
         }
 
-        .logo {
+        /* Estilos para el contenedor del logo */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Separación entre logo y texto */
+        }
+
+        /* Estilos para la imagen del logo */
+        .brand img {
+            height: 45px; /* Ajusta el tamaño de tu logo aquí */
+            width: auto;
+            border-radius: 5px; /* Opcional: bordes redondeados */
+        }
+
+        .logo-texto {
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--amarillo);
@@ -93,6 +107,8 @@
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
             text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .btn-principal:hover {
@@ -177,7 +193,11 @@
 
     <!-- Navegación -->
     <nav>
-        <div class="logo">Multi Traductor</div>
+        <div class="brand">
+            <!-- Aquí se carga tu logo. Asegúrate de que el nombre coincida exactamente -->
+            <img src="logo_traductor.png" alt="Logo Multi Traductor">
+            <div class="logo-texto">Multi Traductor</div>
+        </div>
         <div class="nav-links">
             <a href="#funciones">Funciones</a>
             <a href="#idiomas">Idiomas</a>
@@ -189,7 +209,7 @@
     <section class="hero">
         <h1>Rompe las barreras del <span>Idioma</span></h1>
         <p>Traduce por voz, texto y descubre un mundo sin límites. La aplicación definitiva con soporte para muchísimos idiomas en tiempo real.</p>
-        <button class="btn-principal">Descargar Ahora</button>
+        <a href="#" class="btn-principal">Descargar Ahora</a>
     </section>
 
     <!-- Sección de Funciones -->
@@ -223,7 +243,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Multi_TRADUCTOR_WEB_OFICIAL. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Multi_TRADUCTOR_WEB_OFICIAL. Todos los derechos reservados.</p>
     </footer>
 
 </body>
